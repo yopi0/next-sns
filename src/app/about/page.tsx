@@ -1,17 +1,16 @@
 import { Metadata } from 'next';
-import TimeLine from './components/TimeLine';
 
 export const metadata: Metadata = {
   title: 'My page Title',
 }
 
+//src/app/hogehoge/page.tsx -> /about のルーティング
 export default function Page() {
   return (
     <>
-    <div>
-      <TimeLine />
-    </div>
+    <h1 className="text-3xl font-bold underline">
+        About Page!
+    </h1>
     </>
   );
 }
-    
